@@ -1,4 +1,4 @@
-from typing import Protocol
+from typing import Protocol, Any
 
 from ollama import Client
 
@@ -10,6 +10,7 @@ class LLMClient(Protocol):
         self,
         system_prompt: str,
         user_prompt: str,
+        output_schema: dict[str, Any] | None = None,
     ) -> str:
         ...
 
@@ -29,6 +30,7 @@ class OllamaLLMClient:
         self,
         system_prompt: str,
         user_prompt: str,
+        output_schema: dict[str, Any] | None = None,
     ) -> str:
 
         response = self.client.chat(
@@ -43,6 +45,7 @@ class OllamaLLMClient:
                     "content": user_prompt,
                 },
             ],
+            format = output_schema,
             options={
                 "temperature": 0
             },
