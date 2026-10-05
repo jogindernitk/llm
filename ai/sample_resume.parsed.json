@@ -1,0 +1,21 @@
+{
+  "full_name": "John Smith",
+  "email": "john.smith@example.com",
+  "phone": "416-555-1234",
+  "skills": [
+    "Python",
+    "Java",
+    "AWS",
+    "Docker",
+    "SQL",
+    "Angular"
+  ],
+  "experience": [
+    "Senior Software Developer ABC Financial 2020 - Present Developed Python and Java applications. Built cloud solutions using AWS. Worked with Docker and SQL.",
+    "Software Developer XYZ Technologies 2016 - 2020 Developed Java and Angular applications."
+  ],
+  "education": [
+    "Bachelor of Computer Science",
+    "University of Toronto"
+  ]
+}
